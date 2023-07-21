@@ -1,0 +1,119 @@
+// colocamos las declaraciones generales de nuestro proyecto que se van a mantener en todo el sitio: como el reseteo de css, las variables de colores, los mixin.
+$c-naranja:rgb(255, 217, 171);
+$c-marron: #d44f40;
+$c-blanco:#fff;
+$c-bg-footer: #cbb209;
+$c-sombra: 0px 0px 10px rgba(0, 0, 0, 0.5);
+$c-negro: rgb(0, 0, 0);
+
+$tablet: 768px;
+$desktop: 1200px;
+
+* {
+    padding: 0;
+    margin: 0;
+    object-fit: cover;
+    font-family: Nunito;
+}
+
+a, 
+ul, 
+li {
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    font-size: 1rem;
+}
+
+
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+
+
+@media (min-width: $tablet) {
+
+//  PAGINAS DE CADA REGION 
+
+    .pagina {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 4% 47% 47%;
+
+        gap: 0.5rem;
+        padding: 1rem;
+        padding-top: 1.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;   
+
+        &__tarjeta {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            & h4 {
+                padding-top: 1rem;
+            }
+        }
+
+        &__img {
+            width: 90%;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            padding-bottom: 0rem;
+        }
+        
+        &__titulo {
+            grid-column: 1/3;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        
+        &__p {
+            margin-top: 0;
+            margin-bottom: 1rem;
+            margin-left: 2.5rem;
+            margin-right: 2.5rem;
+        }
+    }
+}
+
+
+
+@media (min-width: $desktop) {
+    
+    .conteiner {
+        display: grid;
+
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 10% 1fr;
+
+        gap: 20px;
+        row-gap: 5px;
+
+        padding-top: 1.5rem;
+        padding-bottom: 4rem;
+    }
+
+}
+
+// CONTENEDOR
+
+@media(min-width: $desktop) {
+  
+    .contenedor {
+      /* Tamaño maximo del contenedor */
+      max-width: 1300px;
+      /* Centramos el elemento */
+      margin-left: auto;
+      margin-right: auto;
+    } 
+     
+}
+
+

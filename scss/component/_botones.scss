@@ -1,0 +1,28 @@
+.footer__boton {
+    color: #000000;
+    padding: 10px 25px;
+    margin-bottom: 1rem;
+    /* Espacio interno del botón */
+    background-color: $c-marron;
+    /* Color de fondo del botón */
+    color: $c-blanco;
+    /* Color del texto del botón */
+    border: none;
+    /* Quita el borde del botón */
+    border-radius: 4px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Cambia el cursor al pasar el mouse */
+    text-shadow: 2px 2px 4px $c-sombra;
+
+    
+    &:hover {
+        background-color: $c-blanco;
+        color:  $c-negro;
+        text-shadow: 2px 2px 4px $c-sombra;
+    }
+
+}
+
+
+

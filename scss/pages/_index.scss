@@ -1,0 +1,203 @@
+
+/* VIDEO */
+
+.video {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.video video {
+    margin: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 100%;
+    height: auto;
+
+}
+
+// SECCION JUJUY
+
+.seccionCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-image: url(/images/bf.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center center;
+    color: #fff;
+    text-shadow: 2px 2px 4px $c-sombra;
+    
+    & p {
+        text-align: center;
+    }
+
+    & h1 {
+        padding-bottom: 0.5rem;
+        padding-top: 0.8rem;
+    }
+
+
+}
+
+
+
+.regiones {
+    
+    display: grid;
+
+    & img {
+        max-width: 100%;    
+    }
+    
+    & h2 {
+        text-align: center;
+        padding-bottom: 0rem;  
+        margin: 0rem;    
+    }
+
+    & p {
+        text-align: center;
+        padding: 2rem;
+        padding-top: 0;
+        padding-bottom: 0.6rem;
+        margin-bottom: 1rem;
+    }
+
+}
+
+
+
+
+// DESTINOS POPULARES CARRUCEL
+
+.conteiner {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 1rem;
+    
+    & img {
+        max-width: 100%;
+    }
+    
+    & div {
+        padding-bottom: 1.5rem;
+    }
+
+}
+
+
+.carousel {
+    padding-top: 1rem;
+}
+
+.contenedor-destinosp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & h2 {
+        margin-bottom: 0.5rem;
+    }
+
+}
+
+
+
+// 4 REGIONES 
+
+.regiones-comenzar {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    
+    & img {
+        max-width: 100%;
+        padding-bottom: 1rem;
+    }
+    
+    & p {
+        text-align: center;
+        padding: 1rem;
+        padding-top: 0;
+    }
+}
+    
+// NOMBRES DE LAS REGIONES 
+
+.articulo a:hover {
+    background-color: #fffadf;
+    color: #e9e217;
+}
+
+
+.pagina {
+    flex-direction: column;
+    text-align: center;
+    padding: 0rem;
+
+    
+    &__titulo {
+        display: flex;
+        justify-content: center;
+    }
+    
+    &__img {
+        max-width: 77%;
+        margin-bottom: 0.5rem;
+    }
+}
+    
+
+
+@media (min-width: $tablet) {
+    
+    .regiones {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr; 
+        
+        & div {
+            display: grid;
+            align-items: center;
+            align-content: center;
+        }
+
+        & h2 {
+            padding-bottom: 0.5rem;
+        }
+
+    }
+    
+    .col-xl-12 {
+        display: flex;
+        width: 100%;   
+    }
+
+    .seccionCenter p {
+        padding-left: 6rem;
+        padding-right: 6rem;
+        padding-bottom: 1rem;
+        margin-bottom: 0.5rem;  
+    }
+}
+
+
+@media (min-width: $desktop) {
+    
+    .articulo img {
+        max-width: 77%;
+    }
+
+    .regiones-comenzar p {
+        margin-bottom: 2rem;
+        padding-left: 9rem;
+        padding-right: 9rem;
+    }  
+
+}

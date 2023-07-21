@@ -1,0 +1,12 @@
+// main.scss quedara vacio y debo importar los parcials creados: (debo tener en cuenta la cascada, primero debe estar _base.scss)
+
+@import './_base.scss';
+
+@import './component/footer';
+@import './component/header';
+@import './component/botones';
+@import './component/formulario';
+@import './component/nav';
+@import './component/carrucel';
+
+@import './pages/index';

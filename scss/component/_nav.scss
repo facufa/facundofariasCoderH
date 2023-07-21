@@ -1,0 +1,15 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    
+    & a {
+        color: $c-negro;
+        font-weight: bold;   
+        
+        &:hover {
+            color: $c-naranja;
+            font-weight: bold;
+        }
+    }          
+}

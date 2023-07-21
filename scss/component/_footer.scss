@@ -1,0 +1,15 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $c-bg-footer;
+    height: 10rem;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 3rem;  
+    
+    & p {
+        padding-bottom: 0rem;
+        color: $c-blanco;
+    }
+}

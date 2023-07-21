@@ -1,0 +1,35 @@
+.header {
+
+    & div {
+        display: flex;
+        justify-content: center;    
+    }
+
+    & img {
+        width: 10rem;
+        margin: 1rem;
+    }
+    
+    & ul {
+       display: flex;
+       gap: 1rem;
+       font-size: 80%;   
+    }
+        
+} 
+
+@media (min-width: $tablet) {
+    
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 1rem;
+    }
+
+}
+
+
+
+
+
+

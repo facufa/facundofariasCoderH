@@ -1,486 +1,336 @@
-/* === REINICIO DE CSS === */
+@charset "UTF-8";
 * {
-    padding: 0;
-    margin: 0;
-    object-fit: cover;
-    font-family: Nunito;
+  padding: 0;
+  margin: 0;
+  object-fit: cover;
+  font-family: Nunito;
 }
 
-a, 
-ul, 
+a,
+ul,
 li {
-    text-decoration: none;
-    color: black;
-    list-style: none;
-    font-size: 1rem;
+  text-decoration: none;
+  color: black;
+  list-style: none;
+  font-size: 1rem;
 }
 
-li a:hover {
-    color: rgb(255, 217, 171);
-    font-weight: bold;
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
 
+@media (min-width: 768px) {
+  .pagina {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 4% 47% 47%;
+    gap: 0.5rem;
+    padding: 1rem;
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
-
-.header div {
+  .pagina__tarjeta {
     display: flex;
-    justify-content: center;    
-}
-
-.header img {
-    width: 10rem;
-    margin: 1rem;
-}
-
-.header ul {
-    display: flex;
-    gap: 1rem;
-    font-size: 80%;   
-}
-
-.header nav {
-    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;   
-}
-
-/* HEADER CONTACT */
-
-.header nav a {
-    color: rgb(0, 0, 0);
-    font-weight: bold;   
-}
-
-.header nav a:hover {
-    color: rgb(255, 217, 171);
-    font-weight: bold;
-
-}
-
-
-
-/* === MAIN === */
-
-/* VIDEO */
-
-.video {
+  }
+  .pagina__tarjeta h4 {
+    padding-top: 1rem;
+  }
+  .pagina__img {
+    width: 90%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding-bottom: 0rem;
+  }
+  .pagina__titulo {
+    grid-column: 1/3;
     display: flex;
     justify-content: center;
-    padding: 1rem;
+    align-content: center;
+  }
+  .pagina__p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .conteiner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 10% 1fr;
+    gap: 20px;
+    row-gap: 5px;
+    padding-top: 1.5rem;
+    padding-bottom: 4rem;
+  }
+}
+@media (min-width: 1200px) {
+  .contenedor {
+    /* Tamaño maximo del contenedor */
+    max-width: 1300px;
+    /* Centramos el elemento */
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #cbb209;
+  height: 10rem;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+.footer p {
+  padding-bottom: 0rem;
+  color: #fff;
+}
+
+.header div {
+  display: flex;
+  justify-content: center;
+}
+.header img {
+  width: 10rem;
+  margin: 1rem;
+}
+.header ul {
+  display: flex;
+  gap: 1rem;
+  font-size: 80%;
+}
+
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1rem;
+  }
+}
+.footer__boton {
+  color: #000000;
+  padding: 10px 25px;
+  margin-bottom: 1rem;
+  /* Espacio interno del botón */
+  background-color: #d44f40;
+  /* Color de fondo del botón */
+  color: #fff;
+  /* Color del texto del botón */
+  border: none;
+  /* Quita el borde del botón */
+  border-radius: 4px;
+  /* Bordes redondeados */
+  cursor: pointer;
+  /* Cambia el cursor al pasar el mouse */
+  text-shadow: 2px 2px 4px 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.footer__boton:hover {
+  background-color: #fff;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 4px 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+form {
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 1rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav a {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+nav a:hover {
+  color: rgb(255, 217, 171);
+  font-weight: bold;
+}
+
+.conteiner-carrucel {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 1200px) {
+  .conteiner-carrucel {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .col-xl-12 {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+}
+/* VIDEO */
+.video {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
 }
 
 .video video {
-    margin: 1rem;
-    margin-top: 0;
-    margin-bottom: 0;
-    max-width: 100%;
-    height: auto;
-
+  margin: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 100%;
+  height: auto;
 }
-
-
-/* === SECCION JUJUY REGIONES=== */
 
 .seccionCenter {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    background-image: url(/images/background.jpg.png);
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-image: url(/images/bf.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center center;
+  color: #fff;
+  text-shadow: 2px 2px 4px 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
-
-.seccionCenter, p {
-    text-align: center;
+.seccionCenter p {
+  text-align: center;
 }
-
-.seccionCenter a {
-    margin-top: 20px;
-    padding: 10px 20px;
-    margin-bottom: 1.5rem;
-    width: 8rem;
-    /* Espacio interno del botón */
-    background-color: #d44f40;
-    /* Color de fondo del botón */
-    color: #fff;
-    /* Color del texto del botón */
-    border: none;
-    /* Quita el borde del botón */
-    border-radius: 4px;
-    /* Bordes redondeados */
-    cursor: pointer;
-    /* Cambia el cursor al pasar el mouse */
+.seccionCenter h1 {
+  padding-bottom: 0.5rem;
+  padding-top: 0.8rem;
 }
-
-.seccionCenter a:hover {
-    background-color: #fffadf;
-    color: #000000;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0);
-}
-
-.seccionCenter, h1 {
-    padding-bottom: 0.5rem;
-    padding-top: 0.8rem;
-}
-
 
 .regiones {
-    display: flex;
-    flex-direction: column;
+  display: grid;
 }
-
 .regiones img {
-    max-width: 100%;    
+  max-width: 100%;
 }
-
 .regiones h2 {
-    text-align: center;
-    padding-bottom: 0rem;  
-    margin: 0rem;    
+  text-align: center;
+  padding-bottom: 0rem;
+  margin: 0rem;
 }
-
 .regiones p {
-    text-align: center;
-    padding: 2rem;
-    padding-top: 0;
-    padding-bottom: 0.6rem;
-    margin-bottom: 1rem;
+  text-align: center;
+  padding: 2rem;
+  padding-top: 0;
+  padding-bottom: 0.6rem;
+  margin-bottom: 1rem;
 }
-
-
-
-/* === DESTINOS POPULARES === */
 
 .conteiner {
-    display: none;
-    flex-direction: column;
-    text-align: center;
-    padding-top: 1rem;
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 1rem;
 }
-
-
 .conteiner img {
-    max-width: 100%;
+  max-width: 100%;
 }
-
 .conteiner div {
-    padding-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .carousel {
-    padding-top: 1rem;
+  padding-top: 1rem;
 }
 
 .contenedor-destinosp {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
 .contenedor-destinosp h2 {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
-
-.carousel {
-    padding-top: 0;
-}
-/* === REGIONES COMENZAR === */
 
 .regiones-comenzar {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
 }
-
 .regiones-comenzar img {
-    max-width: 100%;
-    padding-bottom: 1rem;
+  max-width: 100%;
+  padding-bottom: 1rem;
 }
-
 .regiones-comenzar p {
-    text-align: center;
-    padding: 1rem;
-    padding-top: 0;
+  text-align: center;
+  padding: 1rem;
+  padding-top: 0;
 }
 
-
-/* === CONTACTO === */
-
-.footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #9d9500;
-    height: 10rem;
-    align-items: center;
-    padding: 2rem;
-    margin-top: 5rem;
+.articulo a:hover {
+  background-color: #fffadf;
+  color: #e9e217;
 }
-
-
-.footer a {
-    color: #fff;
-    padding: 10px 20px;
-    margin-bottom: 1.5rem;
-    /* Espacio interno del botón */
-    background-color: #cbb209;
-    /* Color de fondo del botón */
-    color: #ffffff;
-    /* Color del texto del botón */
-    border: none;
-    /* Quita el borde del botón */
-    border-radius: 4px;
-    /* Bordes redondeados */
-    cursor: pointer;
-    /* Cambia el cursor al pasar el mouse */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-
-
-.footer a:hover {
-    background-color: #fffadf;
-    color:  #000000;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0);
-
-}
-
-
-.footer p {
-    padding-bottom: 0rem;
-    color: #fff;
-}
-
-
-
-
-
-
-
-
-
-
-
-/* ===      PAGINAS   === */
 
 .pagina {
-    flex-direction: column;
-    text-align: center;
-    padding: 1rem;
-
+  flex-direction: column;
+  text-align: center;
+  padding: 0rem;
 }
-
 .pagina__titulo {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
-
 .pagina__img {
-    max-width: 77%;
+  max-width: 77%;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .regiones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .regiones div {
+    display: grid;
+    align-items: center;
+    align-content: center;
+  }
+  .regiones h2 {
+    padding-bottom: 0.5rem;
+  }
+  .col-xl-12 {
+    display: flex;
+    width: 100%;
+  }
+  .seccionCenter p {
+    padding-left: 6rem;
+    padding-right: 6rem;
     padding-bottom: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .articulo img {
+    max-width: 77%;
+  }
+  .regiones-comenzar p {
+    margin-bottom: 2rem;
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
 }
 
-
-
-
-
-
-
-
-
-
-/* === 768px TABLET === */
-@media (min-width:768px) {
-
-    .header {
-        display: flex;
-        justify-content: space-between;
-        padding-right: 1rem;
-    }
-
-    /* VIDEO PRESENTACIONAL */
-
-    .video {
-        padding-top: 0rem;
-    }
-
-    /* SECCION REGIONES */
-
-    .regiones {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr; 
-    }
-
-    .regiones div {
-        display: grid;
-        align-items: center;
-        align-content: center;
-    }
-    
-    .regiones h2 {
-        padding-bottom: 0.5rem;
-    }
-
-    .col-xl-12 {
-        display: flex;
-        width: 100%;   
-    }
-
-    .conteiner-carrucel {
-        display: flex;
-        flex-direction: column;
-        /* justify-content: center; */
-        align-items: center;
-        margin-top: 1.5rem;
-        margin-bottom: 2rem;
-    
-    }
-
-    /* SECCION CENTRO */
-    .seccionCenter p {
-        padding-left: 6rem;
-        padding-right: 6rem;
-        padding-bottom: 1rem;
-        margin-bottom: 0.5rem;  
-    }
-
-
-    /* PAGINAS */
-
-    .pagina {
-        display: grid;
-
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 4% 47% 47%;
-
-        gap: 0.5rem;
-        padding: 1rem;
-        padding-top: 1.5rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
-    .pagina__tarjeta {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .pagina__img {
-        width: 90%;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-        padding-bottom: 0rem;
-    }
-
-    .pagina__tarjeta h4 {
-        padding-top: 1rem;
-    }
-
-    .pagina__titulo {
-        grid-column: 1/3;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-    }
-  
-}
-
-
-    /* NOMBRES DE LAS REGIONES */
-.articulo a:hover {
-    background-color: #fffadf;
-    color: #e9e217;
-}
-
-
-
-/* === 1200px PC / PC o PORTATIL === */
-
-@media (min-width:1200px) {
-    
-    .conteiner {
-        display: grid;
-
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 10% 1fr;
-
-        gap: 20px;
-        row-gap: 5px;
-
-        padding-top: 1.5rem;
-        padding-bottom: 4rem;
-    }
-
-    .destinos-populares {
-        grid-column: 1/5;      
-    }
-
-    .box {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .box img {
-        height: 100%;
-        padding-bottom: 0.5rem;
-        
-    }
-
-    .articulo img {
-        max-width: 77%;
-    }
-
-    .regiones-comenzar p {
-        margin-bottom: 2rem;
-        padding-left: 9rem;
-        padding-right: 9rem;
-    }  
-
-    .col-xl-12 {
-            flex: 0 0 auto;
-            width: 75%;   
-    }
-
-    .conteiner-carrucel {
-        display: flex;
-        flex-direction: column;
-        /* justify-content: center; */
-        align-items: center;
-        margin-top: 1.5rem;
-        margin-bottom: 2rem;
-
-    }
-
-    
-
-}
-
-/* CONTENEDOR */
-
-@media(min-width: 1200px) {
-  
-    .contenedor {
-      /* Tamaño maximo del contenedor */
-      max-width: 1300px;
-      /* Centramos el elemento */
-      margin-left: auto;
-      margin-right: auto;
-    }
-    
-   }
-  
-
-
-   /* FORMULARIO */
-
-   form {
-    padding-left: 4rem;
-    padding-right: 4rem;
-    padding-top: 1rem;
-   }
-
-
-   /*  */
+/*# sourceMappingURL=style00.css.map */
