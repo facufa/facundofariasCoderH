@@ -244,19 +244,6 @@ nav a:hover {
   margin-bottom: 1rem;
 }
 
-.conteiner {
-  display: none;
-  flex-direction: column;
-  text-align: center;
-  padding-top: 1rem;
-}
-.conteiner img {
-  max-width: 100%;
-}
-.conteiner div {
-  padding-bottom: 1.5rem;
-}
-
 .carousel {
   padding-top: 1rem;
 }
