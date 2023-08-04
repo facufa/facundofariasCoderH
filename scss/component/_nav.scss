@@ -3,13 +3,16 @@ nav {
     align-items: center;
     justify-content: center; 
     
-    & a {
+    a {
         color: $c-negro;
-        font-weight: bold;   
-        
+        font-weight: bold;  
+                
         &:hover {
             color: $c-naranja;
             font-weight: bold;
+            transform: scale(2.2);
+            transition: transform 0.3s ease;
         }
-    }          
+    } 
+
 }

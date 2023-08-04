@@ -1,19 +1,19 @@
 .header {
 
-    & div {
+    div {
         display: flex;
         justify-content: center;    
     }
 
-    & img {
+    img {
         width: 10rem;
         margin: 1rem;
     }
     
-    & ul {
+    ul {
        display: flex;
        gap: 1rem;
-       font-size: 80%;   
+       font-size: 90%;   
     }
         
 } 

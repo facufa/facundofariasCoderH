@@ -74,28 +74,6 @@
 
 }
 
-
-
-
-// DESTINOS POPULARES CARRUCEL
-
-// .conteiner {
-//     display: none;
-//     flex-direction: column;
-//     text-align: center;
-//     padding-top: 1rem;
-    
-//     & img {
-//         max-width: 100%;
-//     }
-    
-//     & div {
-//         padding-bottom: 1.5rem;
-//     }
-
-// }
-
-
 .carousel {
     padding-top: 1rem;
 }
@@ -182,7 +160,7 @@
     
     .col-xl-12 {
         display: flex;
-        width: 100%;   
+        width: 75%;   
     }
 
     .seccionCenter p {
